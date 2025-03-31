@@ -1,0 +1,79 @@
+/* 首页副标题（打字动画）优化 */
+.home-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 0.5rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* 页面段落增强视觉效果 */
+.content p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 1.2rem;
+}
+
+/* 页脚链接样式 */
+.footer-links {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.footer-links a {
+  margin: 0 0.75rem;
+  color: #999;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+  color: #ff4081;
+  text-decoration: underline;
+}
+
+/* 主页 Emoji 标题美化 */
+.content h2, .content h3 {
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.content h2::before {
+  content: "🔥 ";
+}
+
+.content h3::before {
+  content: "✅ ";
+}
+
+/* 首页 CTA 按钮优化 */
+.cta-button {
+  display: inline-block;
+  background-color: #007acc;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: #005999;
+  text-decoration: none;
+}
+
+/* 移动端自适应 */
+@media screen and (max-width: 600px) {
+  .content p {
+    font-size: 1rem;
+  }
+
+  .footer-links {
+    font-size: 0.85rem;
+  }
+}
