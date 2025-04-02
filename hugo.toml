@@ -19,7 +19,9 @@ enableRobotsTXT = true
 [params]
   # 网站默认颜色主题（auto / light / dark）
   defaultTheme = "auto"
-
+  
+  homeTitle = "BaoLiba - Global Influencer Platform"
+  shortTitle = "BaoLiba"
   # 自定义 CSS 文件（放在 assets/css/extended.css）
   customCSS = ["css/extended.css"]
 
@@ -30,8 +32,8 @@ enableRobotsTXT = true
 
   # 网站图标相关配置（浏览器标签页）
   [params.app]
-    title = "BaoLiba"
-    svgFavicon = ""           # 不使用 SVG 图标
+    title = "BaoLiba - Global Influencer Platform"
+    svgFavicon = "favicon.png"           # 不使用 SVG 图标
     noFavicon = false
     themeColor = "#ffffff"
     iconColor = "#5bbad5"
@@ -69,7 +71,7 @@ enableRobotsTXT = true
       <a href="/about/">About</a> |
       <a href="/privacy-policy/">Privacy Policy</a> |
       <a href="/terms-of-use/">Terms of Use</a> |
-      <a href="/contact/">Contact Us</a>
+      <a href="/contact-us/">Contact Us</a>
     </div>
     '''
 

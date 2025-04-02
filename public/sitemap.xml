@@ -7,9 +7,8 @@
             <loc>http://localhost:1313/posts/</loc><lastmod>2025-03-31T10:00:00&#43;08:00</lastmod></url><url>
             <loc>http://localhost:1313/about/</loc><lastmod>2025-03-31T00:00:00&#43;00:00</lastmod></url><url>
             <loc>http://localhost:1313/contact-us/</loc><lastmod>2025-03-31T00:00:00&#43;00:00</lastmod></url><url>
-            <loc>http://localhost:1313/privacy/</loc><lastmod>2025-03-31T00:00:00&#43;00:00</lastmod></url><url>
             <loc>http://localhost:1313/terms-of-use/</loc><lastmod>2025-03-31T00:00:00&#43;00:00</lastmod></url><url>
-            <loc>http://localhost:1313/privacy-policy/</loc></url><url>
+            <loc>http://localhost:1313/privacy-policy/</loc><lastmod>2025-03-31T00:00:00&#43;00:00</lastmod></url><url>
             <loc>http://localhost:1313/categories/</loc></url><url>
             <loc>http://localhost:1313/categories/documentation/</loc></url><url>
             <loc>http://localhost:1313/tags/</loc></url><url>

@@ -1,3 +1,9 @@
+---
+title: "TPrivacy Policy"
+date: 2025-03-31
+draft: false
+---
+
 **Privacy Policy**
 
 Last updated: [March 2025]
