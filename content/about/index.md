@@ -74,8 +74,6 @@ Are you a brand, agency, or content creator?
 **This is your sign.**  
 Let’s connect, collaborate, and create something global together.
 
-🌐 [Get in Touch »](/contact/)  
-📚 [Explore Case Studies »](/posts/)
 
 ---
 
