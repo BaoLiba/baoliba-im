@@ -69,6 +69,7 @@ enableRobotsTXT = true
     since = 2025       # 网站上线年份
     custom = '''
     <div class="footer-links">
+      <a href="https://baoliba.com/" target="_blank" rel="noopener">BaoLiba</a> |
       <a href="/about/">About</a> |
       <a href="/privacy-policy/">Privacy Policy</a> |
       <a href="/terms-of-use/">Terms of Use</a> |
