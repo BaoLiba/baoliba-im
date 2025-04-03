@@ -50,14 +50,14 @@ enableRobotsTXT = true
     post = ""
     typeit = false  # 不要打字动画
 
-  # 主页展示配置
+ # 主页展示配置
   [params.home.profile]
     enable = true
     title = "<span style='font-size:1.6rem;'>👋 Welcome to <strong>BaoLiba</strong></span>"
     subtitle = "💥 Connecting brands with creators in <strong>50+ countries</strong> — TikTok, Instagram, YouTube and more!"
     typeit = true  # 开启动画效果
     social = true  # 显示社交图标
-    disclaimer = "<br/><a href='/contact/' style='color:#ff4081; font-weight:bold;'>🚀 Join Now</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href='/posts/' style='color:#007acc;'>📚 Explore Creators</a>"
+    disclaimer = "<br/><a href='/https://baoliba.com/' style='color:#ff4081; font-weight:bold;'>🚀 Join Now</a> &nbsp;&nbsp;|&nbsp;&nbsp; >✉️ Email: matitie@baoliba.com</a>"
 
   # 页脚显示配置
   [params.footer]
@@ -95,11 +95,6 @@ enableRobotsTXT = true
     url = "/tags/"
     weight = 2
 
-  [[menu.main]]
-    identifier = "categories"
-    name = "Categories"
-    url = "/categories/"
-    weight = 3
 
   
 

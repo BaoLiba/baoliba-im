@@ -47,7 +47,7 @@ Please check this page periodically to stay informed.
 
 ### 5. Credits & Acknowledgements
 
-This website is proudly built with [WordPress](https://wordpress.org), using the free [Astra](https://wpastra.com) theme.  
+This website is proudly built with [HUGO](https://gohugo.io/), using the free [LoveIt](https://themes.gohugo.io/themes/loveit/) theme.  
 Images are sourced from [Pexels](https://pexels.com), and article content is developed with the assistance of [ChatGPT](https://openai.com/chatgpt).  
 We are grateful for these amazing open tools and communities.
 
