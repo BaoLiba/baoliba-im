@@ -57,7 +57,8 @@ enableRobotsTXT = true
     subtitle = "💥 Connecting brands with creators in <strong>50+ countries</strong> — TikTok, Instagram, YouTube and more!"
     typeit = true  # 开启动画效果
     social = true  # 显示社交图标
-    disclaimer = "<br/><a href='/https://baoliba.com/' style='color:#ff4081; font-weight:bold;'>🚀 Join Now</a> &nbsp;&nbsp;|&nbsp;&nbsp; >✉️ Email: matitie@baoliba.com</a>"
+   disclaimer = "<br/><a href='https://baoliba.com/' style='color:#ff4081; font-weight:bold;'>🚀 Join Now</a> &nbsp;&nbsp;|&nbsp;&nbsp; ✉️ Email: <a href='mailto:matitie@baoliba.com'>matitie@baoliba.com</a>"
+
 
   # 页脚显示配置
   [params.footer]
