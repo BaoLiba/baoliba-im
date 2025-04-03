@@ -1,113 +1,15 @@
-/* 首页副标题（打字动画）优化 */
-.home-subtitle {
-  font-size: 1.2rem;
-  color: #666;
-  margin-top: 0.5rem;
-  line-height: 1.6;
-  text-align: center;
+
+.header-spacer {
+  height: 4.5rem;
 }
 
-/* 页面段落增强视觉效果 */
-.content p {
-  font-size: 1.05rem;
-  line-height: 1.8;
-  color: #333;
-  margin-bottom: 1.2rem;
-}
-
-/* 页脚链接样式 */
-.footer-links {
-  text-align: center;
-  margin-top: 1.5rem;
-  font-size: 0.95rem;
-}
-
-.footer-links a {
-  margin: 0 0.75rem;
-  color: #999;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
-}
-
-.footer-links a:hover {
-  color: #ff4081;
-  text-decoration: underline;
-}
-
-/* 主页 Emoji 标题美化 */
-.content h2, .content h3 {
-  font-weight: 700;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-.content h2::before {
-  content: "🔥 ";
-}
-
-.content h3::before {
-  content: "✅ ";
-}
-
-/* 首页 CTA 按钮优化 */
-.cta-button {
-  display: inline-block;
-  background-color: #007acc;
-  color: #fff;
-  padding: 0.6rem 1.2rem;
-  border-radius: 8px;
-  font-weight: bold;
+.custom-welcome-block {
+  padding: 2rem 1rem;
   margin-top: 1rem;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  text-align: center;
 }
 
-.cta-button:hover {
-  background-color: #005999;
-  text-decoration: none;
-}
-
-/* 移动端自适应 */
-@media screen and (max-width: 600px) {
-  .content p {
-    font-size: 1rem;
-  }
-
-  .footer-links {
-    font-size: 0.85rem;
-  }
-}
-
-/* ✅ 强制拉开 footer 与浏览器底部之间的距离 */
-.footer {
-  padding-bottom: 3rem !important;
-  margin-top: 2rem !important;
-}
-
-/* 防止 footer 贴底，强制页面结构撑开 */
-body, html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.wrapper {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex: 1;
-}
-
-footer {
-  padding-bottom: 3rem !important;
-  margin-top: 2rem !important;
-}
-
-.footer::after {
-  content: "";
-  display: block;
-  height: 60px;
-}
+/* 其他 CSS 忽略，仅示范 */

@@ -14,46 +14,47 @@
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="{{ . }}">
     {{- end -}}
     <link rel="manifest" href="/site.webmanifest">
-{{- end -}}
+{{- end }}
 
 <link rel="canonical" href="{{ .Permalink }}" />
-{{- if .PrevInSection -}}
-    <link rel="prev" href="{{ .PrevInSection.Permalink }}" />
-{{- end -}}
-{{- if .NextInSection -}}
-    <link rel="next" href="{{ .NextInSection.Permalink }}" />
-{{- end -}}
+{{- if .PrevInSection }}
+  <link rel="prev" href="{{ .PrevInSection.Permalink }}" />
+{{- end }}
+{{- if .NextInSection }}
+  <link rel="next" href="{{ .NextInSection.Permalink }}" />
+{{- end }}
 
-{{- with .OutputFormats.Get "RSS" -}}
-    <link rel="alternate" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ $.Site.Title }}">
-    <link rel="feed" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ $.Site.Title }}">
-{{- end -}}
+{{- with .OutputFormats.Get "RSS" }}
+  <link rel="alternate" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ $.Site.Title }}">
+  <link rel="feed" href="{{ .RelPermalink }}" type="application/rss+xml" title="{{ $.Site.Title }}">
+{{- end }}
 
-{{- /* style.min.css */ -}}
 {{- $options := dict "Source" "css/style.scss" "Fingerprint" $fingerprint -}}
 {{- $toCSS := dict "targetPath" "css/style.min.css" "outputStyle" "compressed" "enableSourceMap" true -}}
 {{- $options = dict "Context" . "ToCSS" $toCSS | merge $options -}}
 {{- partial "plugin/style.html" $options -}}
 
-{{- /* Font Awesome */ -}}
 {{- $source := $cdn.fontawesomeFreeCSS | default "lib/fontawesome-free/css/all.min.css" -}}
 {{- $options := dict "Source" $source "Fingerprint" $fingerprint "Preload" true -}}
 {{- partial "plugin/style.html" $options -}}
-{{- if not $cdn.fontawesomeFreeCSS -}}
-    {{- range resources.Match "lib/fontawesome-free/webfonts/*" -}}
-        {{- .Publish -}}
-    {{- end -}}
-{{- end -}}
+{{- if not $cdn.fontawesomeFreeCSS }}
+  {{- range resources.Match "lib/fontawesome-free/webfonts/*" }}
+    {{ .Publish }}
+  {{- end }}
+{{- end }}
 
-{{- /* Animate.css */ -}}
 {{- $source := $cdn.animateCSS | default "lib/animate/animate.min.css" -}}
 {{- $options := dict "Source" $source "Fingerprint" $fingerprint "Preload" true -}}
 {{- partial "plugin/style.html" $options -}}
 
-{{- /* ✅ 加载用户定义的自定义 CSS */ -}}
+{{- /* ✅ 加载自定义 CSS 文件 */ -}}
 {{- with .Site.Params.customCSS }}
   {{- range . }}
-    <link rel="stylesheet" href="{{ . | relURL }}">
+    {{ $custom := resources.Get . }}
+    {{ if $custom }}
+      <link rel="stylesheet" href="{{ $custom.RelPermalink }}">
+    {{ else }}
+      <!-- ⚠️ Warning: custom CSS file not found: {{ . }} -->
+    {{ end }}
   {{- end }}
 {{- end }}
-
