@@ -18,7 +18,7 @@
               {{ .Title }} - {{ .Site.Params.shortTitle | default .Site.Title }}
             {{- end -}}
         </title>
-
+        {{ partial "schema/article-schema.html" . }}
         {{- partial "head/meta.html" . -}}
         {{- partial "head/link.html" . -}}
         {{- partial "head/seo.html" . -}}
