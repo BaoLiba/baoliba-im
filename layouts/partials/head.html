@@ -20,5 +20,9 @@
       {{- /* 加载你的自定义 CSS extended.css */ -}}
       {{- $custom := resources.Get "css/extended.css" | toCSS | minify | fingerprint }}
       <link rel="stylesheet" href="{{ $custom.Permalink }}" integrity="{{ $custom.Data.Integrity }}" />
+
+      <!-- ✅ CC4.0 授权声明 -->
+      <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+        
     </head>
     
